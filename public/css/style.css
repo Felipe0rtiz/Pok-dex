@@ -107,29 +107,30 @@
 
   a.card:hover {
     transform: scale(1.1);
-    align-content: flex-start
+    align-content: flex-start;
   }
   
   a.card img {
-    width: 10rem;
-    height: 10rem;
+    width: 8rem;
+    height: 8rem;
     flex-wrap: wrap;
     justify-content: flex-start;
+    width: 60%;
   }
 
   a.card h2 {
     width: 100%;
     text-align: center;
-    padding: 2rem;
+    padding: 0rem;
     color: #000;
     flex-wrap: wrap;
     justify-content: flex-start;
   }
 
   section#pokedex {
-    margin-left: 10rem;
-    margin-right: 10rem;
-    display: flex;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: inline-block;
     justify-content: space-around;
     align-content: flex-start; 
     flex-wrap: wrap;
