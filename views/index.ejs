@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Pokedéx</title>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=FTiQx8QO538ZJtu0aL_W9ML_U5PlRhSTSY0KS3_LtwUfp5hQP7W3_kDMnh1YAECxM5gv986gpTxWwKLaz6dG0g" charset="UTF-8"></script></head>
+
+<body>
+
+    <nav>
+        <article>
+            <img src="/img/pokebola-go.png" alt="">
+            <h1><a href="/">Pokedéx</a></h1>
+        </article>
+        
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/registration">Cadastro</a></li>
+        </ul>
+    </nav>
+    <% if(message != "") {  %>
+        <section id="message">
+            <p><%= message %></p> <span id="close">&times;</span>
+        </section>
+    <% }  %>
+    <header>
+        <h1>Pokedéx</h1>
+    </header>
+    <section id="pokedex">
+            <a class="card" href="/details">
+            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="">
+            <h2>
+                Bulbasaur
+            </h2>
+            <h4>
+                Nº001
+            </h4>
+        </a>
+    </section>
+    <section id="pokedex">
+        <a class="card" href="/details">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png" alt="">
+        <h2>
+            Ivysaur
+        </h2>
+        <h4>
+            Nº002
+        </h4>
+    </a>
+</section>
+<section id="pokedex">
+    <% pokedex.forEach((item, index)=> { %>
+        <a class="card" href="/details<%= index %>">
+            <img src="<%= item.imagem %>" alt="">
+            <h2>
+                <%= item.nome %>
+            </h2>
+            <h4>
+                <%= item.tipo %>
+            </h4>
+        </a>
+        <% }) %>
+</section>
+    <script src="/js/script.js"></script>
+
+</body>
+
+</html>
+
+
+
