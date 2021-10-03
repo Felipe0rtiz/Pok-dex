@@ -16,7 +16,7 @@ app.get("/", (req, res) => {
 
   setTimeout(() => {
     message = "";
-  }, 500);
+  }, 1000);
 
   res.render("index", { 
     pokedex,
