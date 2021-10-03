@@ -31,7 +31,7 @@ app.get("/registration", (req, res) => {
 app.post("/subscription", (req, res) => {
   const pokemon = req.body
   pokedex.push(pokemon);
-  message = `Parabéns , foi adicionado na sua POKEDEX`;
+  message = `Parabéns ${pokemon.nome} , foi adicionado na sua POKEDEX`;
   res.redirect("/");
 });
 
